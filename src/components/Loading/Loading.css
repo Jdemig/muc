@@ -1,0 +1,10 @@
+@import '../variables.css';
+
+.content {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 135px;
+  text-align: center;
+  font-size: 35px;
+}

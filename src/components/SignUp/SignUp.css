@@ -1,0 +1,143 @@
+@import '../../components/variables.css';
+
+.root {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.75);
+  transition: 500ms ease-in-out;
+}
+
+.container {
+  position: relative;
+  float: left;
+  max-width: 500px;
+  width: 95%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3bd98c;
+  border-radius: 4px;
+  border: 1px solid #3bd98c;
+}
+
+.title {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.headerOne {
+  float: left;
+  color: white;
+  margin: 20px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.exitButton {
+  float: right;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.times {
+  color: white;
+  font-size: 30px;
+  margin: 20px;
+  font-weight: lighter;
+}
+
+.times:hover {
+  color: rgba(255,255,255,0.75);
+}
+
+.times:active {
+  transform: scale(0.9);
+}
+
+.body {
+  border: 5px solid #3bd98c;
+  border-top: 0px;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+.emailLabel, .passwordLabel, .usernameLabel, .errorLabel {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  color: rgba(40,40,40,0.9);
+  font-size: 15px;
+  margin: 5px 0 5px 1px;
+}
+
+.errorLabel {
+  margin: 15px 0 0px 2px;
+}
+
+
+.emailInput, .passwordInput, .usernameInput {
+  font-family: 'Source Sans Pro',sans-serif;
+  position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  padding: 10px;
+  margin: 10px 0 15px 0;
+}
+
+.submitButton, .signUpButton {
+  background-color: #3bd98c;
+  border: 0;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.signUpButton {
+  float: right;
+}
+
+.submitButton:hover, .signUpButton:hover {
+  background-color: rgba(59, 217, 140, 0.8);
+}
+
+.submitButton:active, .signUpButton:active {
+  transform: scale(0.95);
+}
+
+.checkbox, .termsLabel {
+  position: relative;
+  float: left;
+}
+
+.termsLabel {
+  font-family: 'Roboto',sans-serif;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.termsLink {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.termsContainer {
+  position: relative;
+  float: left;
+  width: 100%;
+}

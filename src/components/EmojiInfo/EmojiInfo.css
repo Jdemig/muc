@@ -1,0 +1,9 @@
+@import '../variables.css';
+
+.root {
+  display: block;
+  background-color: white;
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+}

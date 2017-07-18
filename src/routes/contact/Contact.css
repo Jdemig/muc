@@ -1,0 +1,149 @@
+@import '../../components/variables.css';
+
+
+.root {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('../../../public/esteban-lopez.jpg');
+  padding: 30px;
+}
+
+.container {
+  position: relative;
+  float: left;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+}
+
+.headerTwo {
+  margin: 20px 0;
+  padding: 10px 0;
+  text-align: center;
+  color: #869f10;
+  font-weight: bold;
+  width: 100%;
+  float: left;
+  font-family: 'Roboto',sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 36px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
+}
+
+.contactInfo {
+  padding: 15px 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
+  left: 50%;
+  position: relative;
+  float: left;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+.contactName, .contactEmail, .contactNumber {
+  text-align: center;
+  margin: 5px 0;
+  font-size: 18px;
+  font-family: 'Roboto',sans-serif;
+  position: relative;
+  float: left;
+  width: 100%;
+  color: #869f10;
+}
+
+.messageForm {
+  position: relative;
+  float: left;
+  width: 100%;
+  max-width: 780px;
+}
+
+.nameInput, .emailInput, .messageInput {
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px 0px;
+  font-family: 'Roboto',sans-serif;
+  border-radius: 5px;
+  border: 1px solid #869f10;
+  color: #333333;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-sizing: border-box;
+}
+
+.nameInput, .emailInput {
+  width: 48%;
+}
+
+.nameInput {
+  float: left;
+}
+
+.emailInput {
+  float: right;
+}
+
+.messageInput {
+  width: 100%;
+  height: 150px;
+}
+
+.submitButton {
+  color: #007576;
+  border: 1px solid #869f10;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  margin: 0px 0px 10px 0px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0px;
+  -webkit-transition: 0.20s;
+  -moz-transition: 0.20s;
+  -ms-transition: 0.20s;
+  -o-transition: 0.20s;
+}
+
+.submitButton:hover {
+  color: #e6e6e6;
+  background-color: #869f10;
+}
+
+.sending, .sent, .error {
+  border: 1px solid #869f10;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0px;
+  -webkit-transition: 0.20s;
+  -moz-transition: 0.20s;
+  -ms-transition: 0.20s;
+  -o-transition: 0.20s;
+}
+
+.sending {
+  color: black;
+}
+
+.sent {
+  color: green;
+}

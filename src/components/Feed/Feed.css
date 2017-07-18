@@ -1,0 +1,146 @@
+@import '../variables.css';
+
+.root {
+  position: relative;
+  float: left;
+  width: 100%;
+  flex: 1;
+  margin-left: 25px;
+  @media (max-width: 800px) {
+    margin-left: 0;
+  }
+}
+
+.postContainer {
+  position: relative;
+  float: left;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #5a5a5a;
+  margin-bottom: 50px;
+}
+
+.postForm {
+  position: relative;
+  float: left;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.profilePostForm {
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.postType {
+  display: flex;
+  background-color: rgb(215, 229, 222);
+}
+
+
+.postTypeButton {
+  background-color: transparent;
+  padding: 2px;
+  margin: 3px 0;
+  border: 0;
+  color: #3a3a3a;
+  flex: 1;
+  cursor: pointer;
+}
+
+.pencilSquareO, .cameraRetro, .videoCamera {
+  margin-right: 5px;
+  font-size: 18px;
+  position: relative;
+  top: 1px;
+}
+
+.buttonText {
+  font-size: 16px;
+}
+
+.postProfilePic {
+  position: absolute;
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-size: cover;
+  z-index: 2;
+}
+
+.postText {
+  font-size: 14px;
+  color: #606060;
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: white;
+  height: 100px;
+  border: 0;
+  padding: 10px 10px 10px 70px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.postTypeButton:hover {
+  color: rgba(58,58,58,0.75);
+}
+
+.postTypeButton:active {
+  transform: scale(0.95)
+}
+
+.pencilSquareO {
+  font-size: 19px;
+}
+
+.postTypeButton:nth-child(1) {
+  margin-left: 0;
+  border-right: 1px solid #999;
+}
+
+.postTypeButton:nth-child(3) {
+  margin-right: 0;
+  border-left: 1px solid #999;
+}
+
+.postAddon {
+  position: absolute;
+  right: 10px;
+  bottom: 40px;
+}
+
+.addonButton {
+  background: transparent;
+  border: 0;
+  color: #2a2a2a;
+  cursor: pointer;
+}
+
+.addonButton:hover {
+  color: var(--theme-color);
+}
+
+.addonButton:active {
+  transform: scale(0.9);
+}
+
+.submitPostButton {
+  background-color: var(--theme-color);
+  padding: 8px 12px;
+  border: 0;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+
+.submitPostButton:hover {
+  opacity: 0.75;
+}
+
+.submitPostButton:active {
+  opacity: 1;
+}

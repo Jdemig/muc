@@ -1,0 +1,75 @@
+button:focus {
+  outline: none;
+}
+
+.root {
+  display: none;
+  @media (max-width: 775px) {
+    display: none;
+  }
+}
+
+.container {
+  transform: translateY(-100%);
+  @media (max-width: 775px) {
+    transition: 0.2s ease-in-out;
+    background-color: #5ea748;
+    z-index: 5;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px 15px 15px;
+    top: 40px;
+    left: 0;
+    margin-top: 0;
+    position: absolute;
+    overflow: hidden;
+  }
+}
+
+.displaynav {
+  transform: translateY(0);
+}
+
+.link {
+  @media (max-width: 775px) {
+    position: relative;
+    float: left;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3px 8px;
+  }
+}
+
+.link,
+.link:active,
+.link:visited {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.highlight {
+  margin-right: 8px;
+  margin-left: 8px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  @media (max-width: 775px) {
+    margin: 0;
+  }
+}
+
+.highlight:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.spacer {
+  color: rgba(255, 255, 255, 0.3);
+  @media (max-width: 775px) {
+    display: none;
+  }
+}

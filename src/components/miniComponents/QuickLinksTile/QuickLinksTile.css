@@ -1,0 +1,100 @@
+@import '../../../components/variables.css';
+
+.root {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #5a5a5a;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.container {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.headerTwo {
+  position: relative;
+  float: left;
+  margin: 0;
+  line-height: 18px;
+  font-size: 18px;
+  font-family: 'Roboto',sans-serif;
+  margin: 4px 0;
+  font-weight: lighter;
+}
+
+.profilePhoto {
+  position: relative;
+  float: left;
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+  background-size: cover;
+}
+
+.profileContainer {
+  position: relative;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 15px;
+}
+
+.profileLink {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.quickLinksBox {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.calendar, .listAlt, .users, .videoCamera {
+  position: relative;
+  float: left;
+  margin-right: 8px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.eventsLink, .pagesLink, .groupsLink, .liveVideoLink {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 5px 0;
+  background-color: var(--theme-color);
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.eventsLink:hover, .pagesLink:hover, .groupsLink:hover, .liveVideoLink:hover {
+  background-color: rgba(94,167,72,0.75);
+}
+
+.eventsLink:active, .pagesLink:active, .groupsLink:active, .liveVideoLink:active {
+  transform: scale(0.97);
+}
+
+.events, .pages, .groups, .liveVideo {
+  position: relative;
+  float: left;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  line-height: 14px;
+  margin: 2px 0;
+}

@@ -1,0 +1,17 @@
+@import '../../components/variables.css';
+
+.root {
+  position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 7px 40px 7px;
+  box-sizing: border-box;
+  max-width: var(--max-content-width);
+}

@@ -1,0 +1,176 @@
+@import '../../components/variables.css';
+
+.root {
+  position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
+}
+
+.coverPhoto {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  box-shadow: 0 0 5px 0 #5a5a5a;
+  z-index: 1;
+}
+
+.coverPhotoCenter {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 100%;
+  max-width: 850px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.coverPhotoImage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.profilePhoto {
+  width: 100px;
+}
+
+.profilePhotoContainer {
+  width: 150px;
+  height: 150px;
+  border: 0px solid white;
+  background-size: cover;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  box-shadow: 0 0 5px #5a5a5a;
+}
+
+.updateCoverPhoto {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 15px;
+  border-radius: 4px;
+  background-color: white;
+  background-size: cover;
+  border: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #5a5a5a;
+}
+
+.updateCoverPhoto:hover {
+  opacity: 0.9;
+}
+
+.updateCoverPhoto:active {
+  transform: scale(0.95)
+}
+
+.plus {
+  margin-right: 10px;
+}
+
+.editProfile {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  background-color: white;
+  font-size: 15px;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #5a5a5a;
+}
+
+.editProfile:hover {
+  opacity: 0.9;
+}
+
+.editProfile:active {
+  transform: scale(0.95)
+}
+
+.cog {
+  margin-right: 10px;
+}
+
+.profileBodyCenter {
+  background-color: ;
+  position: relative;
+  float: left;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 800px;
+  display: flex;
+}
+
+.profileBodyContainer {
+  background-color: #f0f0f0;
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  @media (max-width: 600px) {
+    padding: 25px 0;
+  }
+}
+
+.profileLeftContainer {
+  position: relative;
+  float: left;
+  width: 225px;
+  @media (max-width:800px) {
+    display: none;
+  }
+}
+
+.uploadProfilePhoto {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  border: 0;
+  display: flex;
+  opacity: 0;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.uploadProfilePhoto:hover {
+  opacity: 1;
+}
+
+.uploadProfilePhoto:active {
+  background-color: rgba(0,0,0,0.25);
+}
+
+.camera {
+  position: relative;
+  float: left;
+  line-height: 32px;
+  font-size: 18px;
+  color: white;
+  width: 30px;
+}
+
+.uploadText {
+  position: relative;
+  float: left;
+  line-height: 14px;
+  font-size: 14px;
+  margin: 2px 0;
+  color: white;
+  flex: 1;
+}

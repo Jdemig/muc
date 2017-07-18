@@ -1,0 +1,86 @@
+@import '../../variables.css';
+
+.root {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #5a5a5a;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  float: left;
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.headerTwo {
+  margin: 0 0 15px 0;
+  color: #1a1a1a;
+}
+
+.friendProfilePic {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  float: left;
+  background-size: cover;
+}
+
+.profilePicContainer {
+  width: 50px;
+}
+
+.profileInfoContainer {
+  flex:1;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.headerFour {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.numberOfFriendsContainer, .mutualFriendsContainer {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+.addressBook, .users {
+  position: relative;
+  float: left;
+  font-size: 14px;
+  color: #6a6a6a;
+}
+
+.numberOfFriends, .mutualFriends {
+  font-size: 12px;
+  position: relative;
+  float: left;
+  color: #6a6a6a;
+  margin: 0;
+  margin-left: 5px;
+}
+
+.removeFriendButton {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #3a3a3a;
+  padding: 0;
+}
+
+.removeFriendButton:hover {
+  color: #1a1a1a;
+}

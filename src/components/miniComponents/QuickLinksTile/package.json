@@ -1,0 +1,6 @@
+{
+  "name": "QuickLinksTile",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./QuickLinksTile.js"
+}

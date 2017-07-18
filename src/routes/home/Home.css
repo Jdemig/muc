@@ -1,0 +1,34 @@
+@import '../../components/variables.css';
+
+.root {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  float: left;
+  width: 100%;
+  max-width: 800px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  @media (max-width: 600px) {
+    padding: 25px 0;
+  }
+}
+
+.leftContainer {
+  position: relative;
+  float: left;
+  width: 225px;
+  @media (max-width: 800px) {
+    display: none;
+  }
+}

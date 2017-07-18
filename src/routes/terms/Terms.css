@@ -1,0 +1,21 @@
+@import '../../components/variables.css';
+
+.root {
+  position: relative;
+  float: left;
+  font-family: 'Roboto',sans-serif;
+  color: #707070;;
+  background-color: #f2f0f0;
+  padding: 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  float: left;
+  width: 100%;
+  max-width: 900px;
+  left: 50%;
+  transform: translateX(-50%);
+}

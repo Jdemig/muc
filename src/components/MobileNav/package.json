@@ -1,0 +1,6 @@
+{
+  "name": "MobileNav",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MobileNav.js"
+}

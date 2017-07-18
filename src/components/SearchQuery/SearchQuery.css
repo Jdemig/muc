@@ -1,0 +1,218 @@
+@import '../../components/variables.css';
+
+.form {
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  background-color: white;
+  height: 53px;
+}
+
+.input {
+  padding: 0.75em;
+  width: 300px;
+  max-width: 33vw;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: 1px solid #eaeaea;
+  float: left;
+  margin: 0.25em 0 0.25em 0.25em;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-weight: normal;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.submitButton {
+  padding: 0.75em;
+  border: 1px solid #eaeaea;
+  background-color: #2c2c2c;
+  color: #eaeaea;
+  float: left;
+  margin: 0.25em 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+}
+
+.mapPreferences {
+  position: relative;
+  float: right;
+  @media (max-width: 775px) {
+    display: none;
+  }
+}
+
+.searchSettings {
+  float: right;
+  position: relative;
+  @media (min-width: 775px) {
+    display: none;
+  }
+}
+
+.cog {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.preferencesButton {
+  padding: 0.75em;
+  border: 1px solid #eaeaea;
+  background-color: #2c2c2c;
+  color: #eaeaea;
+  float: left;
+  margin: 0.25em;
+  border-radius: 5px;
+}
+
+.listType, .price, .beds {
+  float: left;
+}
+
+.listButton {
+  padding: 0.75em;
+  margin: 0.25em 0;
+  border-left: 1px solid #4d4d4d;
+  background-color: white;
+  color: #eaeaea;
+  color: #4d4d4d;
+}
+
+.filterType {
+  display: none;
+  position: absolute;
+  z-index: 3;
+}
+
+.filterPrice {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  width: 200px;
+}
+
+.filterBeds {
+  display: none;
+  position: absolute;
+  z-index: 3;
+}
+
+.homeUl, .homeMaxPrice, .homeMinPrice, .priceInput, .bedList {
+  padding: 0;
+  background-color: white;
+  color: #222;
+  font-weight: 400;
+  box-shadow: 0 10px 20px -5px black;
+  top: -1px;
+  left: 1px;
+  position: relative;
+  padding: 15px;
+  padding-top: 65px;
+  overflow: auto;
+  width: 150px;
+}
+
+.homeMaxPrice, .homeMinPrice {
+  padding-top: 0px;
+}
+
+.homeMaxPrice {
+  display: none;
+}
+
+[type='checkbox']:not(:checked) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin-right: 5px;
+  margin-bottom: 0;
+  background: #fff;
+  border: 1px solid #222;
+  height: 16px;
+  top: 2px;
+  position: relative;
+  width: 16px;
+  display: inline-block;
+}
+[type='checkbox']:checked {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin-right: 5px;
+  margin-bottom: 0;
+  background: #fff;
+  border: 1px solid #222;
+  height: 16px;
+  top: 2px;
+  position: relative;
+  width: 16px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../../public/checkbox.png');
+}
+
+.caretUp, .caretDown {
+  padding-left: 12px;
+  display: none;
+  float: right;
+}
+
+.displayHouseType {
+  display: block;
+}
+
+.minInput {
+  width: 35%;
+  display: inline-block;
+  float: left;
+  padding: 5px;
+  border: 1px solid #222;
+}
+
+.maxInput {
+  width: 35%;
+  display: inline-block;
+  float: right;
+  padding: 5px;
+  border: 1px solid #222;
+}
+
+.dash {
+  border-bottom: 1px solid #bbb;
+  display: inline-block;
+  margin: 0;
+  float: left;
+  width: 8px;
+  height: 15px;
+  position: relative;
+  left: 6px;
+}
