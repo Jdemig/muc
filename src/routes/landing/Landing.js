@@ -8,7 +8,7 @@ import Link from '../../components/Link';
 import SignUp from '../../components/SignUp';
 import SignIn from '../../components/SignIn';
 
-import logoUrl from '../../../public/muc-logo-small.png';
+import logoUrl from '../../../public/weed-wiser-logo.png';
 import facebookUrl from '../../../public/facebook.png';
 import twitterUrl from '../../../public/twitter.png';
 
@@ -22,8 +22,8 @@ class Landing extends React.Component {
             <div className={s.header} >
               <img className={s.logo} src={logoUrl} />
               <div className={s.linkCenter}>
-                <Link to='/download-the-app' className={s.downloadLink} >Download The App!</Link>
-              </div> 
+                <Link to="/download-the-app" className={s.downloadLink} >Download The App!</Link>
+              </div>
             </div>
 
             <div className={s.callToAction}>
@@ -44,7 +44,7 @@ class Landing extends React.Component {
             <h2 className={s.header2} >Meetup with other members, expand your personal network, grow your business, promote events, create a store, join communities</h2>
           </div>
           <div className={s.contentContainer}>
-            <p className={s.paragraph2} >MeetupCannabis will expand more than just your mind. It's not just a network, it's a community</p>
+            <p className={s.paragraph2} >Weed Wiser will expand more than just your mind. It's not just a network, it's a community</p>
           </div>
           <div className={s.contentContainer}>
             <div className={s.createAccountCenter}>
@@ -95,17 +95,17 @@ class Landing extends React.Component {
           <div className={s.footer}>
             <div className={s.socialContainer}>
               <div className={s.social}>
-                <a className={s.facebook} href="https://www.facebook.com/MeetupCannabis-183357422156118/" ><img src={facebookUrl} /></a>
-                <a className={s.twitter} href="https://twitter.com/Meetupcannabis" ><img src={twitterUrl} /></a>
+                <a className={s.facebook} href="https://www.facebook.com" ><img src={facebookUrl} /></a>
+                <a className={s.twitter} href="https://twitter.com" ><img src={twitterUrl} /></a>
               </div>
             </div>
 
             <div className={s.legalContainer}>
-              <p className={s.legal} >Copyright @2017 - <Link className={s.contactLink} to='/contact' >Contact</Link> - <a>Privacy</a> - <Link className={s.termsLink} to='/terms'>Terms</Link> - <a>Contest & Campaigns</a></p>
+              <p className={s.legal} >Copyright @2017 - <Link className={s.contactLink} to="/contact" >Contact</Link> - <a>Privacy</a> - <Link className={s.termsLink} to="/terms">Terms</Link> - <a>Contest & Campaigns</a></p>
             </div>
           </div>
         </div>
-        
+
         <SignIn />
         <SignUp />
 
@@ -114,19 +114,15 @@ class Landing extends React.Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    toggleSignIn: () => {
-      dispatch(toggleSignIn())
+const mapDispatchToProps = dispatch => ({
+  toggleSignIn: () => {
+      dispatch(toggleSignIn());
     },
-    toggleSignUp: () => {
-      dispatch(toggleSignUp())
-    }
-  }
-}
+  toggleSignUp: () => {
+      dispatch(toggleSignUp());
+    },
+});
 
-const mapStateToProps = (state) => {
-  return state.auth
-}
+const mapStateToProps = state => state.auth;
 
 export default connect(mapStateToProps, mapDispatchToProps)(withStyles(s)(Landing));

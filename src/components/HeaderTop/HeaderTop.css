@@ -6,49 +6,144 @@
   width: 100%;
   z-index: 6;
   background-color: white;
+  height: 180px;
+  background-color: rgb(43, 51, 60);
+  overflow: hidden;
 }
 
-.container {
+.arrowLeftContainer {
+  position: absolute;
+  left: 0;
+  height: 180px;
+  width: 50px;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.arrowRightContainer {
+  position: absolute;
+  right: 0;
+  height: 180px;
+  width: 50px;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.arrowLeft,
+.arrowRight {
+  position: relative;
+  float: left;
+  font-size: 50px;
+  color: #f1f1f1;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.arrowLeft:hover,
+.arrowRight:hover {
+  transform: translateY(-50%) scale(1.05);
+}
+
+.arrowLeft:active,
+.arrowRight:active {
+  transform: translateY(-50%) scale(1);
+}
+
+.slideContainer {
+  position: relative;
+  float: left;
+  width: 200%;
+  height: 180px;
+  transition: 400ms ease-in-out;
+}
+
+.socialSlide,
+.bizSlide {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.slideCenter {
   position: relative;
   float: left;
   width: 100%;
-  max-width: var(--max-content-width);
+  height: 180px;
+  max-width: 960px;
   left: 50%;
   transform: translateX(-50%);
+  padding: 0 80px;
+  box-sizing: border-box;
 }
 
 .logo {
+  position: relative;
   float: left;
-  width: 225px;
-  height: 36px;
-  background-image: url('../../../public/muc-header-logo.png');
+  width: 300px;
+  height: 100%;
+  background-image: url('../../../public/weed-wiser-logo.png');
   background-size: cover;
-  margin: 5px;
   @media (max-width:475px) {
-    background-image: url('../../../public/muc-mini-logo.png');
+    background-image: url('../../../public/weed-wiser-logo.png');
     width: 68px;
     height: 36px;
   }
 }
 
+.logoModifier,
+.logoModifierTwo {
+  position: relative;
+  float: left;
+  font-size: 42px;
+  color: #68d3ff;
+  line-height: 40px;
+  margin: 30px 0 30px 10px;
+}
+
+.logoModifierTwo {
+  color: rgb(255, 141, 55);
+}
+
+.logoLink {
+  padding: 5px 5px 5px 0;
+  box-sizing: border-box;
+  width: 450px;
+  height: 110px;
+  position: relative;
+  float: left;
+  top: calc(50% -25px);
+  transform: translateY(-50%);
+}
+
 .linksContainer {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  box-sizing: border-box;
+}
+
+.group {
+  position: relative;
   float: right;
-  margin: 14px 14px 13px 0;
 }
 
 .signOut {
   text-decoration: none;
-  color: #565a5c;
+  color: #fff;
   font-family: 'Roboto',sans-serif;
   font-size: 13px;
   position: relative;
   float: left;
+  font-weight: bold;
   margin-right: 6px;
   margin-top: 1px;
 }
 
 .cog, .bell, .envelope, .userPlus {
-  color: #565a5c;
+  color: #fff;
   font-size: 20px;
   margin: 0 4px;
   position: relative;
@@ -56,7 +151,7 @@
 }
 
 .cog:hover, .bell:hover, .envelope:hover, .userPlus:hover {
-  color: #1a1a1a;
+  color: #eeeeee;
 }
 
 .cog:active, .bell:active, .envelope:active, .userPlus:active {

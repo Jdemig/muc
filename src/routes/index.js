@@ -10,6 +10,7 @@ export default {
     require('./landing').default,
     require('./downloadTheApp').default,
     require('./home').default,
+    require('./homeBiz').default,
     require('./terms').default,
     require('./contact').default,
     require('./profile').default,

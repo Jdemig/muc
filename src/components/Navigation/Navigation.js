@@ -12,7 +12,7 @@ import FontAwesome from 'react-fontawesome';
 
 class Navigation extends React.Component {
   constructor() {
-    super()
+    super();
   }
 
   handleClick = (e) => {
@@ -30,42 +30,38 @@ class Navigation extends React.Component {
           className={cx(s.container)}
           role="navigation"
         >
-          <Link className={s.link} to='/home' >Home</Link>
+          <Link className={s.link} to="/home" >Home</Link>
           <span className={s.spacer} > | </span>
-          <Link className={s.link} to='/local' >Local</Link>
+          <Link className={s.link} to="/local" >Map</Link>
           <span className={s.spacer} > | </span>
-          <Link className={s.link} to='/music' >Music</Link>
+          <Link className={s.link} to="/dispensary" >Dispensaries</Link>
           <span className={s.spacer} > | </span>
-          <Link className={s.link} to='/dispensary' >Dispensary</Link>
-          <span className={s.spacer} > | </span>
-          <Link className={s.link} to='/shop' >Shop</Link>
+          <Link className={s.link} to="/shop" >Shop</Link>
           <span className={s.spacer} > | </span>
           <div className={s.search}>
-            <input className={s.searchInput} to='/shop' type='text' />
+            <input className={s.searchInput} to="/shop" type="text" placeholder="Search..." />
             <button className={s.searchButton}>
               <FontAwesome
                 className={s.searchIcon}
-                name='search'
+                name="search"
               />
             </button>
           </div>
         </div>
       </nav>
-    )
+    );
   }
 }
 
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    unauthUser: () => {
-      dispatch(unauthUser())
-    }
-  }
-}
+const mapDispatchToProps = dispatch => ({
+  unauthUser: () => {
+    dispatch(unauthUser());
+  },
+});
 
 function mapStateToProps(state) {
-  return state.auth
+  return state.auth;
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(withStyles(s)(Navigation));

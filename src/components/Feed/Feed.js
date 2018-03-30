@@ -6,7 +6,7 @@ import FontAwesome from 'react-fontawesome';
 import FeedItem from '../../components/miniComponents/FeedItem';
 
 import profilePhotoUrl from '../../../public/MyPhoto.jpg';
-const profilePhoto = "url('" + profilePhotoUrl + "')";
+const profilePhoto = `url('${profilePhotoUrl}')`;
 
 class Feed extends React.Component {
   render() {
@@ -18,7 +18,7 @@ class Feed extends React.Component {
               <button className={s.postTypeButton} >
                 <FontAwesome
                   className={s.pencilSquareO}
-                  name='pencil-square-o'
+                  name="pencil-square-o"
                 />
                 <span className={s.buttonText}>
                   Story
@@ -27,7 +27,7 @@ class Feed extends React.Component {
               <button className={s.postTypeButton} >
                 <FontAwesome
                   className={s.cameraRetro}
-                  name='camera-retro'
+                  name="camera-retro"
                 />
                 <span className={s.buttonText}>
                   Picture/Video
@@ -36,47 +36,51 @@ class Feed extends React.Component {
               <button className={s.postTypeButton} >
                 <FontAwesome
                   className={s.videoCamera}
-                  name='video-camera'
+                  name="video-camera"
                 />
                 <span className={s.buttonText}>
                   Live Video
                 </span>
               </button>
             </div>
-            <div style={{ backgroundImage: profilePhoto }}  className={s.postProfilePic} ></div>
-            <textarea className={s.postText} name='postText' placeholder='Post a story' ></textarea>
+            <div style={{ backgroundImage: profilePhoto }} className={s.postProfilePic} />
+            <textarea className={s.postText} name="postText" placeholder="Post a story" />
             <div className={s.postAddon}>
               <button className={s.addonButton} >
                 <FontAwesome
                   className={s.pictureO}
-                  name='picture-o'
+                  name="picture-o"
                 />
               </button>
               <button className={s.addonButton} >
                 <FontAwesome
                   className={s.link}
-                  name='link'
+                  name="link"
                 />
               </button>
               <button className={s.addonButton} >
                 <FontAwesome
                   className={s.music}
-                  name='music'
+                  name="music"
                 />
               </button>
               <button className={s.addonButton} >
                 <FontAwesome
                   className={s.user}
-                  name='user'
+                  name="user"
                 />
               </button>
             </div>
-            <button className={s.submitPostButton} type='submit'>Share</button>
+            <button className={s.submitPostButton} type="submit">Share</button>
           </form>
         </div>
 
         <div className={s.feedMainContent}>
           <FeedItem />
+          <FeedItem />
+          <div className={s.loadMoreContainer}>
+            <p className={s.loadMore} >Load more Posts</p>
+          </div>
         </div>
 
       </div>

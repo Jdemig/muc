@@ -5,6 +5,7 @@ import nav from './nav';
 import map from './map';
 import auth from './auth';
 import profile from './profile';
+import misc from './misc';
 
 export default combineReducers({
   user,
@@ -12,5 +13,6 @@ export default combineReducers({
   nav,
   map,
   auth,
-  profile
+  profile,
+  misc,
 });
